@@ -1,5 +1,5 @@
 // Inicializa EmailJS con tu Public Key
-emailjs.init("TU_PUBLIC_KEY");
+emailjs.init("dlDLx1bTfAPNMiIGh");
 
 document.getElementById('personalDataForm').addEventListener('submit', function(event) {
   event.preventDefault();
@@ -10,7 +10,7 @@ document.getElementById('personalDataForm').addEventListener('submit', function(
   const phone = document.getElementById('phone').value;
   const message = document.getElementById('message').value;
 
-  emailjs.send("CODIGO_DEL_SERVICIO", "template_x87cz8c", {
+  emailjs.send("service_19ji7rt", "template_x87cz8c", {
     firstName: firstName,
     lastName: lastName,
     email: email,
@@ -26,3 +26,4 @@ document.getElementById('personalDataForm').addEventListener('submit', function(
     document.getElementById('status-message').innerText = "❌ Hubo un error al enviar los datos.";
   });
 });
+
