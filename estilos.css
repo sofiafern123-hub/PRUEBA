@@ -36,6 +36,11 @@ input, textarea {
   border-radius: 4px;
 }
 
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
 button {
   margin-top: 15px;
   width: 100%;
@@ -56,3 +61,4 @@ button:hover {
   text-align: center;
   font-weight: bold;
 }
+
